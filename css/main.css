@@ -1,0 +1,108 @@
+:root {
+    --logo-color: #0E0578;
+    --accent-color: #2000E7;
+    --second-accent-color: #F2BD00;
+    --text-color: #000000;
+    --subscribe-button-color: #F965FC;
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: Poppins;
+    src: url('../assets/fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: Poppins;
+    src: url('../assets/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: Jost;
+    src: url('../assets/fonts/Jost.ttf');
+}
+
+html {
+    margin:    0 auto;
+    max-width: 1440px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    margin: 50px 20px 150px;
+}
+
+.logo {
+    margin-top: 0;
+    font: bold 48px/72px Poppins, sans-serif;
+    color: var(--logo-color);
+}
+
+nav {
+    flex-grow: 1;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 70px;
+    margin-right: 90px;
+}
+
+li {
+    font: 30px/45px Poppins, sans-serif;
+    list-style-type: none;
+
+}
+ a {
+    text-decoration-line: none;
+    color: #686565;
+    margin-top: 50px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accent {
+   color: var(--accent-color);
+}
+
+main p {
+    font: 30px/45px Poppins, sans-serif;
+}
+
+main h2 {
+    font: bold 48px/32px Poppins, sans-serif;
+
+}
+
+span {
+    color: var(--second-accent-color);
+}
+
+main p:nth-last-of-type(1) {
+    font: 24px/45px Poppins, sans-serif;
+    width: 616px
+}
+
+main button {
+    width: 246px;
+    height: 72px;
+    border-radius: 10px;
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    font: 24px/36px Poppins, sans-serif;
+    color: #FFF;
+    margin-right: 70px;
+    box-shadow: 11px 21px 15px 6px rgba(0, 0, 0, .25);
+}
+
+main button:last-child {
+    background-color: rgba(32, 0, 231, 0.04);
+    color: var(--accent-color);
+}
