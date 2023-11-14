@@ -153,7 +153,7 @@ section.my_projects h2 {
 section.my_projects p {
     font: 24px/36px Poppins, sans-serif;
     text-align: center;
-    color: #000000;
+    color: var(--text-color);
 }
 
 .gallery {
@@ -171,4 +171,73 @@ section.my_projects p {
 .gallery img {
     height: 180px;
     width: 246px;
+}
+
+section.contact_me {
+    background-color: #43BAFD0F;
+    height: 1316px;
+}
+
+section.contact_me h2 {
+    font: bold 48px/0px Poppins, sans-serif;
+    letter-spacing: 16px;
+    text-align: center;
+    padding-top: 70px;
+}
+
+section.contact_me p {
+    font: 24px/36px Poppins, sans-serif;
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 200px;
+}
+
+section.contact_me .container {
+    display: flex;
+    margin-left: 50px;
+}
+
+input[placeholder], textarea {
+    font: 32px/48px Poppins, sans-serif;
+    color: var(--text-color);
+    padding-left: 50px;
+    margin-bottom: 50px;
+}
+
+input[type=email], input[type=password] {
+    width: 653px;
+    height: 94px;
+    background-color: #FFF;
+    border-style: none;
+    box-shadow: 13px 21px 4px 0px rgba(0, 0, 0, .25);
+}
+
+textarea {
+    width: 653px;
+    height: 265px;
+    background-color: #FFF;
+    border-style: none;
+    box-shadow: 13px 21px 4px 0px rgba(0, 0, 0, .25);
+    padding-top: 20px;
+    resize: none;
+}
+
+section.contact_me button {
+    width: 327px;
+    height: 94px;
+    background-color: #FFF;
+    border-style: none;
+    border-radius: 0%;
+    color: var(--text-color);
+    margin-left: 180px;
+    font: 32px/48px Poppins, sans-serif;
+    box-shadow: 13px 21px 4px 0px rgba(0, 0, 0, .25);
+}
+
+section.contact_me img {
+    position: relative;
+    width: 790px;
+    height: auto;
+    top: -150px;
+    left: -120px;
 }
