@@ -99,13 +99,19 @@ button {
     border-color: var(--accent-color);
     background-color: var(--accent-color);
     font: 24px/36px Poppins, sans-serif;
-    color: #FFF;
     margin-right: 70px;
     box-shadow: 11px 21px 15px 6px rgba(0, 0, 0, .25);
 }
 
+button a {
+    color: #FFF;
+}
+
 main button:last-child {
     background-color: rgba(32, 0, 231, 0.04);
+}
+
+main button:last-child a {
     color: var(--accent-color);
 }
 
