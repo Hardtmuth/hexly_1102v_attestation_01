@@ -19,6 +19,12 @@
 }
 
 @font-face {
+    font-weight: 700;
+    font-family: Jost;
+    src: url('../assets/fonts/Jost-Bold.ttf');
+}
+
+@font-face {
     font-weight: 400;
     font-family: Jost;
     src: url('../assets/fonts/Jost.ttf');
@@ -45,7 +51,7 @@ nav {
     flex-grow: 1;
 }
 
-ul {
+header ul {
     display: flex;
     justify-content: flex-end;
     gap: 70px;
@@ -210,6 +216,10 @@ input[placeholder], textarea {
     margin-bottom: 50px;
 }
 
+section.contact_me ::placeholder {
+    color: var(--text-color);
+}
+
 input[type=email], input[type=password] {
     width: 653px;
     height: 94px;
@@ -247,3 +257,94 @@ section.contact_me img {
     top: -150px;
     left: -120px;
 }
+
+footer {
+    background-color: #FFD69633;
+    height: 700px;
+}
+
+footer .container {
+    display: flex;
+}
+
+.subscribe .logo {
+    font: bold 48px/72px Poppins, sans-serif;
+    letter-spacing: 16px;
+    margin-left: 70px;
+    margin-top: 100px;
+}
+
+.subscribe input {
+    width: 323px;
+    height: 97px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    background-color: var(--text-color);
+    border-radius: 30px;
+    font: bold 31px/44.8px Jost, sans-serif;
+    color:#FFF;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, .25);
+}
+.subscribe ::placeholder {
+    color:#FFF;
+}
+
+.subscribe button {
+    position: relative;
+    top: 0px;
+    left: -110px;
+    width: 178px;
+    height: 101px;
+    font: bold 31px/44.8px Jost, sans-serif;
+    background-color: #F965FC;
+    color:#FFF;
+    border-style: none;
+    border-radius: 30px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, .25);
+}
+
+.footer_info {
+    display: flex;
+    flex-direction: row;
+    margin-top: 75px;
+    gap: 20px;
+}
+
+.footer_info .bold{
+    font: bold 31px/44.8px Jost, sans-serif;
+    color: var(--text-color);
+    margin-bottom: 25px;
+}
+
+.footer_info ul li {
+    font: 31px/44.8px Jost, sans-serif;
+    color: var(--text-color);
+    margin-bottom: 40px;
+}
+
+hr {
+    width: 93%;
+    border-top: 3px solid var(--text-color);
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-left: 40px;
+    font: 31px/44.8px Jost, sans-serif;
+}
+
+.social {
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+    align-items: center;
+}
+
+img[alt='youtube'] {
+    padding-top: 40px;
+}
+
